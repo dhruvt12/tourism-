@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<title>TOURISM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #f2f2f2;
+  line-height: 1.8;
+  background-color: f5fffa;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/08/dc/bf/8b/night-view.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://www.bruisedpassports.com/wp-content/uploads/2017/08/Srinagar-things-to-do-see-eat-28.jpg");
+  min-height: 400px;
+
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2017/01/Untitled-design-4.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+
+<div class="w3-top">
+  <div class="w3-light-grey">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">EXPLORING THE <span class="w3-hide-small">WORLD</span> IN COMFORT</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center" style="color:black;font-style:italic;font-family: forte;">ABOUT ME</h3>
+
+  <p class="w3-center"style="color:black"><em>I love travelling...</em></p>
+  <p style="color:rgb(49, 47, 47)">My name is Sakshi Singh, and I love to travel. My biggest passion is traveling the world and experiencing new adventures and cultures. I live for it. I live in India , but most years I manage to get three months off  to travel the various parts of india and write about what I see, hear, feel and do.
+
+    Sometimes, I find destinations that I just cannot get enough of, and then I have to return there to learn and experience even more.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p style="color:black"><b><i class="fa fa-user w3-margin-right"></i>SAKSHI SINGH</b></p><br>
+      <img src="https://image.shutterstock.com/image-photo/portrait-happy-young-woman-making-600w-1139262782.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p style="color:rgb(77, 73, 73);font-family: lato">Welcome to my website. To date, Adventure in You has grown into a large adventure travel blog full of useful travel information based on personal recommendations, combined with inspirational articles on our travel blogging journey around the world. Every month, hundreds and thousands of people come to our site to read our story, follow our misadventures, seek our travel advice and get information on how we’ve managed to turn our blog into a business.</p>
+    </div>
+  </div>
+  
+  
+  <div class="w3-light-grey">
+    
+  </div>
+  
+  
+  </div>
+  
+
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Integrated Companies
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">129+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Tours Planned
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+
+
+  
+  <div class="w3-row-padding w3-text-white w3-large">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="https://www.planetware.com/wpimages/2020/01/india-in-pictures-beautiful-places-to-photograph-gateway-of-india-mumbai.jpg" alt="Golden Temple" style="width:100%">
+        <a href="https://mumbaicity.gov.in/tourist-place/gateway-of-india/">
+        <span class="w3-display-bottomleft w3-padding" style="font-size: 15px;font-family: sans-serif ;border-radius: 25px;border:2px solid #ffffff">GATE WAY OF INDIA </span></a>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaj5v1J66_DXVgfltWddsmI22moYaQKbKFrQ&usqp=CAU" alt="UDAIPUR PALACE [UDAIPUR, RAJASTHAN]" style="width:100%">
+            <a href="https://www.holidify.com/places/udaipur/city-palace-sightseeing-3835.html" >
+              <span class="w3-display-bottomleft w3-padding" style="font-size: 12px;font-family: sans-serif ;border-radius: 25px;border:2px solid #ffffff">UDAIPUR PALACE</span></a>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR6puwF91nth1gU3r6rUxlJHI3JZHzjpd1LXg&usqp=CAU" alt="RISHIKESH" style="width:100%">
+            <a href="https://uttarakhandtourism.gov.in/destination/rishikesh/"> 
+            <span class="w3-display-bottomleft w3-padding" style="font-size: 12px;font-family: sans-serif ;border-radius: 25px;border:2px solid #ffffff">RISHIKESH</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="data:image/jpeg;base64,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" alt="Pisa" style="width:100%">
+           <a href="https://traveltriangle.com/blog/best-places-to-visit-in-nainital/" >
+            <span class="w3-display-bottomleft w3-padding" style="font-size: 12px;font-family: sans-serif ;border-radius: 25px;border:2px solid #ffffff">NANITAL</span></a>
+            
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://www.touropia.com/gfx/d/famous-mausoleums-in-the-world/taj_mahal.jpg?v=729a33c8078fa3629fdd252d758ebe77" alt="TAJ MAHAL" style="width:100%">
+            <a href="https://www.tajmahal.gov.in/">
+               <span class="w3-display-bottomleft w3-padding" style="font-size: 12px;font-family: sans-serif ;border-radius: 25px;border:2px solid #ffffff">TAJ MAHAL</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <div class="w3-display-container">
+      <img src="https://www.planetware.com/wpimages/2020/01/india-in-pictures-beautiful-places-to-photograph-the-ganges-river-varanasi.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="VARANSI">
+      <a href="https://www.lonelyplanet.com/india/uttar-pradesh/varanasi">
+        <span class="w3-display-bottomleft w3-padding" style="font-size: 10px;font-family: sans-serif ;border-radius: 25px;border:2px solid #ffffff">VARANSI</span></a>
+     </div>
+    </div>
+     
+
+    <div class="w3-col m3">
+      <div class="w3-display-container">
+      <img src="https://www.planetware.com/wpimages/2020/01/india-in-pictures-beautiful-places-to-photograph-bada-bagh-jaisalmer.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="JAISALMER">
+      <a href="http://www.tourism.rajasthan.gov.in/jaisalmer.html">
+        <span class="w3-display-bottomleft w3-padding" style="font-size: 10px;font-family: sans-serif ;border-radius: 25px;border:2px solid #ffffff">JAISALMER</span></a>
+    </div>
+    </div>
+
+    <div class="w3-col m3">
+      <div class="w3-display-container">
+      <img src="https://www.planetware.com/wpimages/2020/01/india-in-pictures-beautiful-places-to-photograph-golden-temple-amritsar.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="GOLDEN TEMPLE">
+      <a href="https://www.goldentempleamritsar.org/">
+        <span class="w3-display-bottomleft w3-padding" style="font-size: 10px;font-family: sans-serif ;border-radius: 25px;border:2px solid #ffffff">GOLDEN TEMPLE</span></a>
+    </div>
+    </div>
+
+
+    <div class="w3-col m3">
+      <div class="w3-display-container">
+      <img src="https://www.planetware.com/wpimages/2020/01/india-in-pictures-beautiful-places-to-photograph-ellora-caves.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="ELLORA">
+      <a href="https://www.yatra.com/indian-monuments/aurangabad/ellora-caves">
+      <span class="w3-display-bottomleft w3-padding" style="font-size: 10px;font-family: sans-serif ;border-radius: 25px;border:2px solid #ffffff">ELLORA</span></a>
+    </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <div class="w3-display-container">
+      <img src="https://www.planetware.com/wpimages/2020/01/india-in-pictures-beautiful-places-to-photograph-qutub-minar.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+      <a href="http://delhitourism.gov.in/delhitourism/tourist_place/qutab_minar.jsp">
+        <span class="w3-display-bottomleft w3-padding" style="font-size: 10px;font-family: sans-serif ;border-radius: 25px;border:2px solid #ffffff">QUTUB MINAR</span></a>
+    </div>
+    </div>
+
+    <div class="w3-col m3">
+      <div class="w3-display-container">
+      <img src="https://www.planetware.com/wpimages/2020/01/india-in-pictures-beautiful-places-to-photograph-darjeeling-west-bengal.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+      <a href="https://www.holidify.com/places/darjeeling/">
+        <span class="w3-display-bottomleft w3-padding" style="font-size: 10px;font-family: sans-serif ;border-radius: 25px;border:2px solid #ffffff">DARJEELING</span></a>
+    </div>
+    </div>
+
+    <div class="w3-col m3">
+      <div class="w3-display-container">
+      <img src="https://www.touropia.com/gfx/d/tourist-attractions-in-india/dharamsala.jpg?v=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+      <a href="https://himachaltourism.gov.in/destination/dharamshala/">
+      <span class="w3-display-bottomleft w3-padding" style="font-size: 10px;font-family: sans-serif ;border-radius: 25px;border:2px solid #ffffff">DHARAMSHALA</span></a>
+    </div>
+    </div>
+
+    <div class="w3-col m3">
+      <div class="w3-display-container">
+      <img src="https://www.bruisedpassports.com/wp-content/uploads/2017/08/Srinagar-things-to-do-see-eat-29.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      <a href="https://traveltriangle.com/blog/best-places-to-visit-in-srinagar/">
+      <span class="w3-display-bottomleft w3-padding" style="font-size: 10px;font-family: sans-serif ;border-radius: 25px;border:2px solid #ffffff">SRINAGAR</span></a>
+    </div>
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center" style="color:black;font-style:italic;font-family: forte;">CONTACT US</h3>
+  <p class="w3-center" style="color:crimson"><em>I'd love your feedback!</em></p>
+  
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_Ov2pA_3cBjAf_svSvc0M6t4ZWIbqMaQaKg&usqp=CAU" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel" style="color:black">
+
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" style="color:black"></i> Chicago, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" style="color:black"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right" style="color:black"></i> Email: mail@mail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</script>
+
+</body>
+</html>
+
